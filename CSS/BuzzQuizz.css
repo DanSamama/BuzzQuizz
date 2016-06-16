@@ -1,0 +1,17 @@
+.outfit{
+    height: 300px;
+}
+.firstQuestion{
+    margin-bottom: 20px;
+}
+
+
+.selected{
+    border:5px solid darkslateblue;
+    box-sizing: border-box;
+}
+
+#userMessage{
+    font-size: 60px;
+    color:green;
+}
