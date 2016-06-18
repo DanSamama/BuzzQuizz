@@ -4,30 +4,71 @@
 
     <meta charset="UTF-8">
     <title>BuzzQuizz</title>
-    <script type="text/javascript" src="JS/BuzzQuizz.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="CSS/BuzzQuizz.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Google fonts imported-->
+    <link href="https://fonts.googleapis.com/css?family=Tillana" rel="stylesheet">
+
 
 </head>
 <body>
 
-<h1>How close are you from an Israeli since your Alya ?</h1>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="logoBuzz" src="images/logoBuzzquizz.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
+<div class="container-fluid">
 
-<div class="firstQuestion">
-    <div class="title">You are walking in the street and someone bumps into you, how do you react ? </div> <br/>
+<h1 class="titleQuizz">How close are you from an Israeli since your Alya ?</h1>
+
+<div class="row question1">
+
+    <div class="col-lg-4"></div>
+    <div class="firstQuestion col-lg-4">
+    <div class="title">Question 1 : You are walking in the street and someone bumps into you, how do you react ? </div> <br/>
 
     <label><input type="radio" value="3" name="question1">Get angry and argue with the person.</label><br/>
 
-    <label><input type="radio" value="1" name="question1"></label>Apologizing to the person.<br/>
+    <label><input type="radio" value="1" name="question1">Apologizing to the person.</label><br/>
 
     <label><input type="radio" value="4" name="question1">Not paying attention and continue on your way.</label><br/>
 
     <label><input type="radio" value="2" name="question1">Why would you be on the street when you could just order a Pizza with our Magic.</label><br/>
 
+    </div>
+    <div class="col-lg-4"></div>
+
 </div>
 
-<div class="secondQuestion">
-    <div class="title">You prepare your day to the beach, what do you bring with you?</div> <br/>
+<div class="row question2">
+
+    <div class="col-lg-4"></div>
+    <div class="secondQuestion col-lg-4">
+    <div class="title">Question 2 : You prepare your day to the beach, what do you bring with you?</div> <br/>
 
     <input type="checkbox" value="0" name="question2"/>
     <label>12 shekels to rent a chair</label>
@@ -45,11 +86,16 @@
     <input type="checkbox" value="1" name="question2"/>
     <label>Speakers without forgetting your matkots</label>
     <br/>
+    </div>
+    <div class="col-lg-4"></div>
 
 </div>
 
-<div class="thirdQuestion">
-    <div class="title">How would you dress at a wedding?</div>
+<div class="row question3">
+
+    <div class="col-lg-1"></div>
+    <div class="thirdQuestion col-lg-10">
+    <div class="title three">Question 3 : How would you dress at a wedding?</div>
 
     <span>
         <img data-outfit-val="3" class="outfit selected" src="images/engWedding.jpg" alt="English Wedding" onclick="toggleSelected(this)">
@@ -58,25 +104,54 @@
         <img data-outfit-val="1" class="outfit" src="images/frWedding.jpg" alt="French wedding outfit" onclick="toggleSelected(this)">
     </span>
 
+    </div>
+    <div class="col-lg-1"></div>
+
 </div>
 
-<div class="fourthQuestion">
-    <div class="title">How many times do you eat houmous per week?</div>
+<div class="row question4">
 
+    <div class="col-lg-2"></div>
+    <div class="fourthQuestion col-lg-8">
+    <div class="title fourth">Question 4 : How many times do you eat houmous per week?</div>
         Number of times (between 1 and 7):
         <input type="number" id="quantity" min="1" max="7">
 
+    </div>
+    <div class="col-lg-2"></div>
+
 </div>
 
-<div class="fifthQuestion">
-    <div class="title">What is the main ingredient of a Sabih?</div>
+<div class="row question5">
+
+    <div class="col-lg-2"></div>
+    <div class="fifthQuestion col-lg-8">
+    <div class="title fifth">Question 5 : What is the main ingredient of a Sabih?</div>
     <label for="ingredient">Your Answer</label>
     <input type="text" id="ingredient" placeholder="ingredient"/>
+    </div>
+    <div class="col-lg-2"></div>
+
 </div>
 
-<button onclick="checkMyScore();">Submit!</button>
 
-<div id="userMessage"></div>
+<div class="row submit">
 
+    <div class="col-lg-2"></div>
+    <div class="button-center col-lg-5">
+    <button onclick="checkMyScore();">Check your score</button>
+    </div>
+    <div class="col-lg-5"id="userMessage" ></div>
+
+</div>
+
+
+</div>
+
+<script type="text/javascript" src="JS/BuzzQuizz.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

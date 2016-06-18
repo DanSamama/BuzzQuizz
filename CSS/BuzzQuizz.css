@@ -1,17 +1,73 @@
+img.logoBuzz {
+    height: 30px;
+    width: auto;
+}
+
 .outfit{
-    height: 300px;
+    height: 324px;
+    width: auto;
+    margin-bottom: 2%;
 }
 .firstQuestion{
     margin-bottom: 20px;
 }
-
-
 .selected{
     border:5px solid darkslateblue;
     box-sizing: border-box;
 }
 
 #userMessage{
-    font-size: 60px;
-    color:green;
+    font-size: 19px;
+    color:#009CFF;
+    padding-top: 3%;
+    text-align: left;
+    margin-left: -10%;
+}
+.titleQuizz{
+    font-family: 'Tillana',cursive;
+    text-align: center;
+    background-image: url('../images/matkot.jpg');
+    background-size: cover;
+    background-position-y: -195px;
+    height: 95px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.firstQuestion{
+    margin-top: 5%;
+}
+.title {
+    text-align: center;
+    font-family: "Calibri Light";
+    font-weight: bold;
+}
+.question3 {
+    margin-top: 4%;
+}
+.title.three{
+    margin-bottom: 2%;
+}
+.title.fourth, .title.fifth{
+    margin-top: 2%;
+}
+.fourthQuestion, .fifthQuestion{
+    text-align: center;
+}
+.button-center {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.question1{
+    padding-bottom: 2%;
+}
+.firstQuestion, .secondQuestion, .thirdQuestion, .fourthQuestion, .fifthQuestion{
+    border: #009CFF 4px solid;
+}
+.question4 {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.submit{
+    margin-bottom: 2%;
 }
