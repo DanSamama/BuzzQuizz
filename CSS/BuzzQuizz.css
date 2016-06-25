@@ -25,7 +25,7 @@
     margin-left: -10%;
 }
 .titleQuizz{
-    font-family: 'Tillana',cursive;
+    font-family: 'Tillana',cursive, Arial,"Calibri Light";
     text-align: center;
     background-image: url('../images/matkot.jpg');
     background-size: cover;
@@ -39,7 +39,7 @@
 }
 .title {
     text-align: center;
-    font-family: "Calibri Light";
+    font-family: "Calibri Light",cursive, 'Tillana';
     font-weight: bold;
 }
 .question3 {

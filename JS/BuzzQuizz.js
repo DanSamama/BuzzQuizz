@@ -9,6 +9,9 @@ var checkMyScore = function () {
         if (currentAnswer1.checked) {
             sum += parseInt(currentAnswer1.value);
         }
+        else{
+            sum += NaN;
+        }
 
     }
 
@@ -21,20 +24,20 @@ var checkMyScore = function () {
     }
 
 
-     var allAnswers3 = document.getElementsByClassName("outfit selected");
+    var allAnswers3 = document.getElementsByClassName("outfit selected");
     var outfitValue = allAnswers3[0].getAttribute("data-outfit-val");
-     sum += parseInt(outfitValue);
+    sum += parseInt(outfitValue);
 
 
     var allAnswers4 = document.getElementById("quantity");
     var houmousValue = calculateHumusValue(parseInt(allAnswers4.value));
     sum += parseInt(houmousValue);
-    
-    
 
-    var allAnswers5 = document.getElementById("ingredient")
+
+
+    var allAnswers5 = document.getElementById("ingredient");
     if (ingredient.value.toLowerCase() === "eggplant"){
-    sum += 5;
+        sum += 5;
     }
     else if(ingredient.value.toLowerCase() === "egg"){
         sum += 3;
@@ -48,19 +51,19 @@ var checkMyScore = function () {
 
     var message = "";
     if (isNaN(sum)){
-        message = "Please fill all the fields"
+        message = "Please fill all the fields";
     }else {
         if (sum >=3 && sum < 9) {
-            message = "Are you even trying???"
+            message = "Are you even trying???";
         }
         else if(sum>=9 && sum<15){
-            message = "You have a lot of work to do"
+            message = "You have a lot of work to do";
         }
         else if(sum>=15 && sum<18){
-            message ="You are getting close"
+            message ="You are getting close";
         }
-        else if(sum>18){
-            message = "Yes you are a true Israeli, now what??? Want a gift?"
+        else if(sum>=18){
+            message = "Yes you are a true Israeli, now what??? Want a gift?";
         }
     }
 
@@ -71,9 +74,9 @@ var checkMyScore = function () {
 
 
 var toggleSelected = function(clickedPic){
-   // var allAnswers3 = document.getElementsByClassName("outfit");
+    // var allAnswers3 = document.getElementsByClassName("outfit");
 
-   var allImages = document.getElementsByClassName('outfit');
+    var allImages = document.getElementsByClassName('outfit');
     for( var i=0;i<allImages.length;i++){
         allImages[i].className = 'outfit';
     }
@@ -83,7 +86,7 @@ var toggleSelected = function(clickedPic){
 }
 
 var calculateHumusValue = function(houmousValue){
-    var result = 0
+    var result = 0;
     switch (houmousValue){
         case 1:
             result = 1;
