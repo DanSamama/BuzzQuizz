@@ -1,4 +1,5 @@
-img.logoBuzz {
+
+.logoBuzz{
     height: 30px;
     width: auto;
 }
@@ -28,7 +29,7 @@ img.logoBuzz {
     text-align: center;
     background-image: url('../images/matkot.jpg');
     background-size: cover;
-    background-position-y: -195px;
+    background-position-y: 42%;
     height: 95px;
     color: white;
     text-shadow: 2px 2px black;

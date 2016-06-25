@@ -22,8 +22,8 @@ var checkMyScore = function () {
 
 
      var allAnswers3 = document.getElementsByClassName("outfit selected");
-    var outfitVal = allAnswers3[0].getAttribute("data-outfit-val");
-     sum += parseInt(outfitVal);
+    var outfitValue = allAnswers3[0].getAttribute("data-outfit-val");
+     sum += parseInt(outfitValue);
 
 
     var allAnswers4 = document.getElementById("quantity");
